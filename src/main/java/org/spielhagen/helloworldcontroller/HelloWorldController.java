@@ -8,7 +8,7 @@ import java.util.List;
 @RestController
     public class HelloWorldController {
 
-        private List<Message> messages = new ArrayList<>();
+        private final List<Message> messages = new ArrayList<>();
 
         @GetMapping("/api/messages")
         public List<Message> getAllMessages() {
